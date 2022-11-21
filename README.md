@@ -16,5 +16,5 @@ bash shell_scripts/install_torch.sh
 
 ## preprocess
 ```
-bash shell_scripts/run_preprocess.sh
+bash shell_scripts/run_preprocess_raw_data.sh
 ```
