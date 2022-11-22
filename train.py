@@ -4,6 +4,7 @@ import os
 import time
 from functools import partial
 
+import torch
 from setproctitle import setproctitle
 from transformers import (
     AutoConfig,
@@ -61,10 +62,13 @@ def main(model_args: ModelArguments, dataset_args: DatasetsArguments, training_a
         preprocess_logits_for_metrics=preprocess_logits_for_metrics,
     )
     trainer.train()
+    if training_args.local_rank > 0:
+        torch.distributed.barrier()
     if training_args.local_rank == 0:
         model.save_pretrained(training_args.output_dir)
         config.save_pretrained(training_args.output_dir)
         tokenizer.save_pretrained(training_args.output_dir)
+        torch.distributed.barrier()
 
     if training_args.do_eval:
         metric = trainer.evaluate(test_dataset)
