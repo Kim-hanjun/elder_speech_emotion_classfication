@@ -13,7 +13,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 bash shell_scripts/install_torch.sh
 ```
-## code formater
+## code formatter
 ```
 black --line-length 119
 isort
