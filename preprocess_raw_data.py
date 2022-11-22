@@ -10,10 +10,8 @@ from literal import LABEL2ID, PREPROCESS_FOLDER, RAW_DATA, RAW_LABELS
 
 def main(args):
     data_path = args.raw_data_path
-    seed = args.seed
 
     raw_data = pd.read_excel(data_path, header=1)
-    raw_data[RAW_LABELS] = raw_data[RAW_LABELS].apply(lambda x: LABEL2ID[x])
 
     train_df, test_df = train_test_split(
         raw_data, test_size=args.test_ratio, random_state=args.seed, stratify=raw_data[RAW_LABELS]
