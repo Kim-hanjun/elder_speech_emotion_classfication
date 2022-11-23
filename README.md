@@ -50,16 +50,15 @@ bash shell_scripts/run_train.sh
 
 ```
 "klue/roberta-base": {
-"eval_loss": 0.6013084053993225,
-"eval_accuracy": 0.7845982142857143,
-"eval_micro_f1": 0.7845982142857143,
-"eval_micro_recall": 0.7845982142857143,
-"eval_micro_precision": 0.7845982142857143,
-"eval_roc_auc_ovr": 0.9279247201889272,
-"eval_runtime": 12.8652,
-"eval_samples_per_second": 139.29,
-"eval_steps_per_second": 17.411,
-"epoch": 2.0
-    }
+    "eval_loss": 0.6013084053993225,
+    "eval_accuracy": 0.7845982142857143,
+    "eval_micro_f1": 0.7845982142857143,
+    "eval_micro_recall": 0.7845982142857143,
+    "eval_micro_precision": 0.7845982142857143,
+    "eval_roc_auc_ovr": 0.9279247201889272,
+    "eval_runtime": 12.8652,
+    "eval_samples_per_second": 139.29,
+    "eval_steps_per_second": 17.411,
+    "epoch": 2.0
     }
 ```
