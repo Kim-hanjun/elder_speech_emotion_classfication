@@ -31,3 +31,19 @@ bash shell_scripts/run_train.sh
 ## log
 - log/preprocess.log : 데이터 전처리 로그
 - YYYYMMDD-HH:MM:SS_result.json : 모델 best checkpoint의 테스트 결과
+
+## result
+```
+"klue/bert-base": {
+    "eval_loss": 0.6249468922615051,
+    "eval_accuracy": 0.7795758928571429,
+    "eval_micro_f1": 0.7795758928571429,
+    "eval_micro_recall": 0.7795758928571429,
+    "eval_micro_precision": 0.7795758928571429,
+    "eval_roc_auc_ovr": 0.9148944881136637,
+    "eval_runtime": 13.6548,
+    "eval_samples_per_second": 131.236,
+    "eval_steps_per_second": 16.405,
+    "epoch": 3.0
+    }
+```
