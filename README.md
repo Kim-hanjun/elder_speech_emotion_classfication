@@ -62,3 +62,18 @@ bash shell_scripts/run_train.sh
     "epoch": 2.0
     }
 ```
+
+```
+"monologg/koelectra-base-v3-discriminator": {
+    "eval_loss": 0.9988111853599548,
+    "eval_accuracy": 0.7896205357142857,
+    "eval_micro_f1": 0.7896205357142857,
+    "eval_micro_recall": 0.7896205357142857,
+    "eval_micro_precision": 0.7896205357142857,
+    "eval_roc_auc_ovr": 0.8968455773267365,
+    "eval_runtime": 13.2091,
+    "eval_samples_per_second": 135.664,
+    "eval_steps_per_second": 16.958,
+    "epoch": 6.0
+    }
+```
