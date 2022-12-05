@@ -1,4 +1,4 @@
-# elder_spech_emotion_classfication
+# elder_speech_emotion_classfication
 
 ## environment
 ```
