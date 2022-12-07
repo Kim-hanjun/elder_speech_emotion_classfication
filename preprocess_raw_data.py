@@ -14,7 +14,7 @@ def main(args):
     raw_data = pd.read_excel(data_path, header=1)
 
     train_df, test_df = train_test_split(
-        raw_data, test_size=args.test_ratio, random_state=args.seed, stratify=raw_data[RAW_LABELS]
+        raw_data, test_size=args.test_ratio, random_state=args.seed, shuffle=True, stratify=raw_data[RAW_LABELS]
     )
 
     train_info = train_df[RAW_LABELS].value_counts()
